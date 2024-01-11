@@ -1,6 +1,6 @@
 import pytest
 
-from pythonic_garage_band.band import Band, Musician, Guitarist, Bassist, Drummer
+from pythonic_garage_band.band import Guitarist, Band, Drummer#, Musician, Guitarist, Bassist, Drummer
 
 
 
@@ -12,7 +12,7 @@ def test_guitarist_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_guitarist_repr():
     joan = Guitarist("Joan Jett")
     actual = repr(joan)
@@ -20,7 +20,7 @@ def test_guitarist_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_drummer_str():
     sheila = Drummer("Sheila E.")
     actual = str(sheila)
